@@ -28,5 +28,12 @@ final class Token: Model, Content {
     self.value = value
     self.$user.id = userID
   }
-  
+}
+
+extension Token {
+   
+  static func generate(for user: User) throws -> Token {
+    let random = [UInt8].random(count: 16).base64
+    return try Token(value: random, userID: user.requireID())
+  }
 }

@@ -16,10 +16,11 @@ public func configure(_ app: Application) async throws {
         database: Environment.get("DATABASE_NAME") ?? "plant_database",
         tls: .prefer(try .init(configuration: .clientDefault)))
     ), as: .psql)
-
+  
   app.migrations.add(CreatePlant())
   app.migrations.add(CreateUser())
-  app.migrations.add(Token())
+  app.migrations.add(CreateToken())
+ 
     // register routes
     try routes(app)
 }
