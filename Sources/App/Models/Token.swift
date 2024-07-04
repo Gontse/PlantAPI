@@ -37,3 +37,17 @@ extension Token {
     return try Token(value: random, userID: user.requireID())
   }
 }
+
+// MARK: - ModelAuthenticatable
+
+extension Token: ModelTokenAuthenticatable {
+  
+  static let valueKey = \Token.$value
+  static let userKey = \Token.$user
+  
+  typealias User = App.User
+  
+  var isValid: Bool {
+    true
+  }
+}
