@@ -20,6 +20,7 @@ public func configure(_ app: Application) async throws {
   app.migrations.add(CreatePlant())
   app.migrations.add(CreateUser())
   app.migrations.add(CreateToken())
+  app.migrations.add(CreateAdminUser())
  
     // register routes
     try routes(app)
