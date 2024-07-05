@@ -92,5 +92,9 @@ extension User: ModelAuthenticatable {
   func verify(password: String) throws -> Bool {
     try Bcrypt.verify(password, created: self.password)
   }
-  
 }
+
+// MARK: - Authenticatable
+
+extension User: ModelSessionAuthenticatable {}
+extension User: ModelCredentialsAuthenticatable {}
