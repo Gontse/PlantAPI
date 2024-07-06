@@ -9,7 +9,7 @@
 import Fluent
 import Vapor
 
-final class Plant: Model {
+final class Plant: Model, Content {
   
   static let schema = "plants"
   
@@ -19,13 +19,12 @@ final class Plant: Model {
   @Field(key: "name")
   var name: String
   
+  @Field(key: "description")
+  var description: String
+  
   init() {}
   
   init(id: UUID? = nil, name: String) {
     self.name = name
   }
 }
-
-// MARK: - Content
-
-extension Plant: Content { }

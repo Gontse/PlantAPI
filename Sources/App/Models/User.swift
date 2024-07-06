@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class User: Model {
+final class User: Model, Content {
   
   static let schema = "users"
   
@@ -50,7 +50,6 @@ final class User: Model {
   }
 }
 
-extension User: Content { }
 
 extension User {
   
@@ -96,5 +95,5 @@ extension User: ModelAuthenticatable {
 
 // MARK: - Authenticatable
 
-extension User: ModelSessionAuthenticatable {}
-extension User: ModelCredentialsAuthenticatable {}
+extension User: ModelSessionAuthenticatable { }
+extension User: ModelCredentialsAuthenticatable { }
