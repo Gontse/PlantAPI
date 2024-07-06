@@ -22,7 +22,7 @@ public func configure(_ app: Application) async throws {
   app.migrations.add(CreateToken())
   app.migrations.add(CreateAdminUser())
   app.migrations.add(CreatePlantPrice())
- // app.migrations.add(CreatePlantSeedData())
+  app.migrations.add(CreatePlantSeedData())
   
   app.logger.logLevel = .debug
   try await app.autoMigrate()

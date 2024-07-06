@@ -13,6 +13,7 @@ struct CreatePlant: Migration {
     database.schema("plants")
       .id()
       .field("name", .string, .required)
+      .field("description", .string, .required)
       .create()
   }
   
