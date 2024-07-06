@@ -24,7 +24,8 @@ final class Plant: Model, Content {
   
   init() {}
   
-  init(id: UUID? = nil, name: String) {
+  init(id: UUID? = nil, name: String, description: String) {
     self.name = name
+    self.description = description
   }
 }
