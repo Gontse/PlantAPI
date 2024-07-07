@@ -1,6 +1,6 @@
 //
 //  CreatePlantSeedData.swift
-//  
+//
 //
 //  Created by Gontse on 2024/07/06.
 //
@@ -14,10 +14,40 @@ struct CreatePlantSeedData: Migration {
     let plants = [
       Plant(
         name: "Rose",
-        description: " A woody perennial flowering plant of the genus Rosa, known for its beautiful and fragrant flowers."),
+        description: "A woody perennial flowering plant of the genus Rosa, known for its beautiful and fragrant flowers."),
       Plant(
         name: "Tulip",
-        description: "A bulbous spring-flowering plant of the lily family, with boldly colored cup-shaped flowers.")
+        description: "A bulbous spring-flowering plant of the lily family, with boldly colored cup-shaped flowers."),
+      Plant(
+        name: "Sunflower",
+        description: "A large annual forb of the genus Helianthus, known for its large, bright yellow flower head."),
+      Plant(
+        name: "Cactus",
+        description: "A member of the plant family Cactaceae, native to the Americas, known for its thick, fleshy stems that store water."),
+      Plant(
+        name: "Bamboo",
+        description: "A giant woody grass that grows chiefly in the tropics, known for its rapid growth and strength."),
+      Plant(
+        name: "Orchid",
+        description: "A diverse and widespread family of flowering plants with blooms that are often colorful and fragrant."),
+      Plant(
+        name: "Fern",
+        description: "A member of a group of vascular plants that reproduce via spores and have neither seeds nor flowers."),
+      Plant(
+        name: "Lavender",
+        description: "A small aromatic evergreen shrub of the mint family, with narrow leaves and bluish-purple flowers."),
+      Plant(
+        name: "Oak",
+        description: "A large tree of the beech family, native to the Northern Hemisphere, known for its strength and longevity."),
+      Plant(
+        name: "Maple",
+        description: "A tree or shrub of the genus Acer, often recognized by its lobed leaves and vibrant fall colors."),
+      Plant(
+        name: "Pine",
+        description: "A coniferous tree of the genus Pinus, known for its long needles and cone-shaped seeds."),
+      Plant(
+        name: "Aloe Vera",
+        description: "A succulent plant species of the genus Aloe, known for its medicinal and skin-care properties. ")
     ]
     return plants.create(on: database)
   }
@@ -33,19 +63,19 @@ struct CreatePlantSeedData: Migration {
 
 
 /*
-| Plant Name        | Description                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| Rose              | A woody perennial flowering plant of the genus Rosa, known for its beautiful and fragrant flowers. |
-| Tulip             | A bulbous spring-flowering plant of the lily family, with boldly colored cup-shaped flowers. |
-| Sunflower         | A large annual forb of the genus Helianthus, known for its large, bright yellow flower head. |
-| Cactus            | A member of the plant family Cactaceae, native to the Americas, known for its thick, fleshy stems that store water. |
-| Bamboo            | A giant woody grass that grows chiefly in the tropics, known for its rapid growth and strength. |
-| Orchid            | A diverse and widespread family of flowering plants with blooms that are often colorful and fragrant. |
-| Fern              | A member of a group of vascular plants that reproduce via spores and have neither seeds nor flowers. |
-| Lavender          | A small aromatic evergreen shrub of the mint family, with narrow leaves and bluish-purple flowers. |
-| Oak               | A large tree of the beech family, native to the Northern Hemisphere, known for its strength and longevity. |
-| Maple             | A tree or shrub of the genus Acer, often recognized by its lobed leaves and vibrant fall colors. |
-| Pine              | A coniferous tree of the genus Pinus, known for its long needles and cone-shaped seeds. |
-| Aloe Vera         | A succulent plant species of the genus Aloe, known for its medicinal and skin-care properties. |
-
-*/
+ | Plant Name        | Description                                                                 |
+ |-------------------|-----------------------------------------------------------------------------|
+ | Rose              | A woody perennial flowering plant of the genus Rosa, known for its beautiful and fragrant flowers. |
+ | Tulip             | A bulbous spring-flowering plant of the lily family, with boldly colored cup-shaped flowers. |
+ | Sunflower         | A large annual forb of the genus Helianthus, known for its large, bright yellow flower head. |
+ | Cactus            | A member of the plant family Cactaceae, native to the Americas, known for its thick, fleshy stems that store water. |
+ | Bamboo            | A giant woody grass that grows chiefly in the tropics, known for its rapid growth and strength. |
+ | Orchid            | A diverse and widespread family of flowering plants with blooms that are often colorful and fragrant. |
+ | Fern              | A member of a group of vascular plants that reproduce via spores and have neither seeds nor flowers. |
+ | Lavender          | A small aromatic evergreen shrub of the mint family, with narrow leaves and bluish-purple flowers. |
+ | Oak               | A large tree of the beech family, native to the Northern Hemisphere, known for its strength and longevity. |
+ | Maple             | A tree or shrub of the genus Acer, often recognized by its lobed leaves and vibrant fall colors. |
+ | Pine              | A coniferous tree of the genus Pinus, known for its long needles and cone-shaped seeds. |
+ | Aloe Vera         | A succulent plant species of the genus Aloe, known for its medicinal and skin-care properties. |
+ 
+ */
